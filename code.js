@@ -3,8 +3,9 @@ function helloWorld() {
     return "Hello, World!";
 }
 
-function sayHello(name = 'World') {
-    if (name === null ||
+function sayHello(name) {
+    if (typeof name === 'undefined' ||
+        name === null ||
         name === '' ||
         typeof name === 'function' ||
         typeof name === 'object') {
@@ -55,7 +56,7 @@ function isVowel(letter) {
     if (letter === '') {
         return false;
     }
-    if (letter.length>1) {
+    if (letter.length > 1) {
         return false;
     }
     if (typeof letter === 'boolean') {
@@ -74,19 +75,19 @@ console.log(isVowel(false));
 console.log(isVowel("banana"));
 console.log(isVowel());
 
-function add(num1,num2) {
+function add(num1, num2) {
     num1 = Number(num1);
     num2 = Number(num2);
     return Number(num1 + num2);
 }
 
 console.log(add);
-console.log(add(2,3));
-console.log(add(-3,-9));
-console.log(add("5",6));
-console.log(add("-4","10"));
-console.log(add("banana","split"));
-console.log(add(2,"apples"));
+console.log(add(2, 3));
+console.log(add(-3, -9));
+console.log(add("5", 6));
+console.log(add("-4", "10"));
+console.log(add("banana", "split"));
+console.log(add(2, "apples"));
 console.log(add());
 
 
