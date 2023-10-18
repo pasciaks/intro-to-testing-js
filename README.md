@@ -170,7 +170,7 @@ Our next exercise is to follow the TDD workflow to develop incremental tests and
 - Step 4: Run all tests. Does each test turn green? If so, then we can proceed. 
 - Step 5: Refactor! It's definitely refactoring time!
 
-### When to Refactor
+### When to Refactor ((( LEFT OFF HERE )))
 - How do we know that it's time to refactor? The answer: Once we have a handful of green tests, but the logic feels hard-coded, funky, or incomplete, then it's probably refactoring time.
 - Notice that when the input is "Jane", "Pat", or "Alex", the tests green. But what if we sent in any other name as the argument? 
 - When every new test means that we're adding another `if` or `else if` to the code, is there a better way of doing things?
