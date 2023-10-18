@@ -12,3 +12,14 @@ function sayHello(name = 'World') {
     }
     return `Hello, ${name}!`; // will work for any input
 }
+
+function isFive(num) {
+    if (typeof num ==='string') {
+        if (num ==='5') { return true;}
+    }
+    return !!(num == 5);
+}
+
+console.log(isFive(5));
+console.log(isFive("5"));
+console.log(isFive(null));

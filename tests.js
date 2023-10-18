@@ -55,10 +55,10 @@ describe('sayHello', function () {
     it('should return a string [Hello, World!"] when called', function() {
         expect(sayHello("")).toBe("Hello, World!");
     });
-    it('should return a string [Hello, World!"] when called', function() {
+    it('should return a string [Hello, 2.3!"] when called', function() {
         expect(sayHello(2.3)).toBe("Hello, 2.3!");
     });
-    it('should return a string [Hello, World!"] when called', function() {
+    it('should return a string [Hello, 5!"] when called', function() {
         expect(sayHello("5")).toBe("Hello, 5!");
     });
     it('should return a string [Hello, World!"] when called', function() {
@@ -69,5 +69,17 @@ describe('sayHello', function () {
     });
     it('should return a string [Hello, World!"] when called', function() {
         expect(sayHello(function test(){})).toBe("Hello, World!");
+    });
+});
+
+describe('isFive', function () {
+    it('should be a defined function', function() {
+        expect(typeof isFive).toBe('function');
+    });
+    it('should return true if "5" is passed', function() {
+        expect( isFive("5")).toBe(true);
+    });
+    it('should return false if "2" is passed', function() {
+        expect( isFive("2")).toBe(false);
     });
 });
