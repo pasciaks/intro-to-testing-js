@@ -256,6 +256,8 @@ Our next exercise is to follow the TDD workflow to develop incremental tests and
 - Repeat until the tests are robust and the function works as intended.
 - Commit your work to git and push to GitHub before moving forward.
 
+((( left off here )))
+
 ## Exercise #12 Test Drive an `isVowel` function
 - Start with the smallest tests first.
 - Write just enough code to green the test
