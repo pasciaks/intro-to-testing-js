@@ -43,3 +43,31 @@ describe('sayHello', function () {
         expect(sayHello('Pat')).toBe("Hello, Pat!");
     });
 });
+
+//expect(sayHello()).toBe("Hello, World!")
+describe('sayHello', function () {
+    it('should return a string [Hello, World!"] when called', function() {
+        expect(sayHello()).toBe("Hello, World!");
+    });
+    it('should return a string [Hello, World!"] when called', function() {
+        expect(sayHello(null)).toBe("Hello, World!");
+    });
+    it('should return a string [Hello, World!"] when called', function() {
+        expect(sayHello("")).toBe("Hello, World!");
+    });
+    it('should return a string [Hello, World!"] when called', function() {
+        expect(sayHello(2.3)).toBe("Hello, 2.3!");
+    });
+    it('should return a string [Hello, World!"] when called', function() {
+        expect(sayHello("5")).toBe("Hello, 5!");
+    });
+    it('should return a string [Hello, World!"] when called', function() {
+        expect(sayHello([])).toBe("Hello, World!");
+    });
+    it('should return a string [Hello, World!"] when called', function() {
+        expect(sayHello({})).toBe("Hello, World!");
+    });
+    it('should return a string [Hello, World!"] when called', function() {
+        expect(sayHello(function test(){})).toBe("Hello, World!");
+    });
+});
