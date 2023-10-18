@@ -76,6 +76,9 @@ describe('isFive', function () {
     it('should be a defined function', function() {
         expect(typeof isFive).toBe('function');
     });
+    it('should return true if 5 is passed', function() {
+        expect( isFive(5)).toBe(true);
+    });
     it('should return true if "5" is passed', function() {
         expect( isFive("5")).toBe(true);
     });

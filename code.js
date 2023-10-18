@@ -22,6 +22,7 @@ function isFive(num) {
     return !!(num == 5);
 }
 
+console.log(isFive);
 console.log(isFive(5));
 console.log(isFive("5"));
 console.log(isFive(null));
@@ -33,14 +34,16 @@ function isEven(num) {
     return (num % 2 === 0);
 }
 
+console.log(isEven);
 console.log(isEven(2));
-console.log(isEven(2));
-console.log(isEven(2));
-console.log(isEven(2));
-console.log(isEven(2));
-console.log(isEven(2));
-console.log(isEven(2));
-console.log(isEven(2));
+console.log(isEven(-4));
+console.log(isEven(3));
+console.log(isEven("banana"));
+console.log(isEven("8"));
+console.log(isEven(Infinity));
+console.log(isEven(true));
+console.log(isEven(false));
+console.log(isEven());
 
 function isVowel(letter) {
     if (typeof letter === 'undefined') {
@@ -61,8 +64,6 @@ function isVowel(letter) {
     return ['a', 'e', 'i', 'o', 'u'].includes(`${letter}`.toLowerCase());
 }
 
-// @todo - add in test code to tests.js
-
 console.log(isVowel);
 console.log(isVowel("a"));
 console.log(isVowel("A"));
@@ -73,14 +74,13 @@ console.log(isVowel(false));
 console.log(isVowel("banana"));
 console.log(isVowel());
 
-// @todo - add in test code to tests.js
-
 function add(num1,num2) {
     num1 = Number(num1);
     num2 = Number(num2);
     return Number(num1 + num2);
 }
 
+console.log(add);
 console.log(add(2,3));
 console.log(add(-3,-9));
 console.log(add("5",6));
